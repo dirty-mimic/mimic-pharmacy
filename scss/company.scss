@@ -1,0 +1,163 @@
+@use "global" as *;
+
+.greeting {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+
+  &_txt {
+    margin-right: 3%;
+    &_ttl {
+      font-size: 1.5em;
+      border-left: 3px solid #45DFC3;
+      padding-left: 2%;
+    }
+
+    &_exp {
+      line-height: 2;
+    }
+  }
+}
+
+.philosophy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+  &_img {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_txt {
+    width: 50%;
+
+    li {
+      font-size: 1.5em;
+      margin: 3%;
+      list-style: none;
+    }
+  }
+}
+
+.corporate {
+  &_info {
+    width: 60%;
+    margin: 5% auto;
+
+    table {
+      margin: 0 auto;
+      width: 50%;
+
+      tr {
+        border: 1px solid #000000;
+
+        .item {
+          background-color: #f3f3f3;
+          border-right: 1px solid #000000;
+          vertical-align: middle;
+          padding: 1.5% 0;
+        }
+
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+@include mq(tab) {
+  .greeting {
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+
+    &_txt {
+      margin: 10% 0;
+
+      &_exp {
+        margin-top: 5%;
+      }
+
+      &_img {
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .philosophy {
+    li {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@include mq(sp) {
+
+  .greeting {
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+
+    &_txt {
+      margin: 0 auto;
+      font-size: 0.8em;
+
+      &_exp {
+        font-size: 0.9em;
+      }
+
+      &_img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .philosophy {
+    display: block;
+    width: 90%;
+
+    &_img {
+      width: 100%;
+    }
+    &_txt {
+    width: 100%;
+
+     li {
+       font-size: 0.9em;
+     }
+  }
+  }
+}
+
+.corporate {
+  &_info {
+    width: 90%;
+
+    table {
+      width: 100%;
+
+      .item {
+        font-size: 0.75em;
+      }
+
+      td {
+        font-size: 0.75em;
+      }
+    }
+  }
+}

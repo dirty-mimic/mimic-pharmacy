@@ -1,0 +1,130 @@
+.greeting {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+.greeting_txt {
+  margin-right: 3%;
+}
+.greeting_txt_ttl {
+  font-size: 1.5em;
+  border-left: 3px solid #45DFC3;
+  padding-left: 2%;
+}
+.greeting_txt_exp {
+  line-height: 2;
+}
+
+.philosophy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.philosophy_img {
+  width: 50%;
+}
+.philosophy_img img {
+  width: 100%;
+}
+.philosophy_txt {
+  width: 50%;
+}
+.philosophy_txt li {
+  font-size: 1.5em;
+  margin: 3%;
+  list-style: none;
+}
+
+.corporate_info {
+  width: 60%;
+  margin: 5% auto;
+}
+.corporate_info table {
+  margin: 0 auto;
+  width: 50%;
+}
+.corporate_info table tr {
+  border: 1px solid #000000;
+}
+.corporate_info table tr .item {
+  background-color: #f3f3f3;
+  border-right: 1px solid #000000;
+  vertical-align: middle;
+  padding: 1.5% 0;
+}
+.corporate_info table tr td {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .greeting {
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+  }
+  .greeting_txt {
+    margin: 10% 0;
+  }
+  .greeting_txt_exp {
+    margin-top: 5%;
+  }
+  .greeting_txt_img {
+    margin: 0 auto;
+  }
+  .greeting_txt_img img {
+    width: 100%;
+  }
+
+  .philosophy li {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .greeting {
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+  }
+  .greeting_txt {
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+  .greeting_txt_exp {
+    font-size: 0.9em;
+  }
+  .greeting_txt_img {
+    width: 100%;
+  }
+  .greeting_txt_img img {
+    width: 100%;
+  }
+
+  .philosophy {
+    display: block;
+    width: 90%;
+  }
+  .philosophy_img {
+    width: 100%;
+  }
+  .philosophy_txt {
+    width: 100%;
+  }
+  .philosophy_txt li {
+    font-size: 0.9em;
+  }
+}
+.corporate_info {
+  width: 90%;
+}
+.corporate_info table {
+  width: 100%;
+}
+.corporate_info table .item {
+  font-size: 0.75em;
+}
+.corporate_info table td {
+  font-size: 0.75em;
+}

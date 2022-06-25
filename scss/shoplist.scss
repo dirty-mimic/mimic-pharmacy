@@ -1,0 +1,86 @@
+@use "global" as *;
+
+.area {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% auto;
+  width: 80%;
+
+  li {
+    list-style: none;
+    width: 7.5%;
+    padding: 1.1% 0;
+    background-color: #45DFC3;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+}
+
+.prefectures {
+  margin: 5% 0;
+  h2 {
+    font-size: 1.8em;
+    color: #45DFC3;
+    margin-left: 5%;
+  }
+}
+
+.shops {
+
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+
+  table {
+    margin: 0 auto;
+    width: 100%;
+
+    tr {
+      th {
+        padding: 1% 0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+
+      }
+
+      td {
+        padding: 3%;
+        border-bottom: 1px solid #000000;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@include mq(tab) {
+  .area {
+    flex-wrap: wrap;
+  }
+}
+
+@include mq(sp) {
+  .prefectures {
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+
+
+  .shops {
+    width: 90%;
+
+    table {
+      tr {
+        th {
+          font-size: 0.8em;
+        }
+
+        td {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.recruit_info {
+  width: 80%;
+  margin: 10% auto;
+}
+.recruit_info_ttl {
+  font-size: 1.5em;
+  border-left: 3px solid #45DFC3;
+  padding-left: 2%;
+}
+.recruit_info table {
+  margin: 10% auto;
+  width: 70%;
+}
+.recruit_info table tr {
+  border: 1px solid #000000;
+}
+.recruit_info table tr .item {
+  background-color: #f3f3f3;
+  border-right: 1px solid #000000;
+  vertical-align: middle;
+  padding: 1.5% 0;
+}
+.recruit_info table tr td {
+  vertical-align: middle;
+  padding-left: 2%;
+}
+.recruit_form {
+  width: 80%;
+  margin: 10% auto;
+}
+.recruit_form_ttl {
+  font-size: 1.5em;
+  border-left: 3px solid #45DFC3;
+  padding-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .recruit_info {
+    width: 90%;
+  }
+  .recruit_info_ttl {
+    font-size: 1.4em;
+  }
+  .recruit_info table {
+    width: 90%;
+  }
+  .recruit_form {
+    width: 90%;
+  }
+  .recruit_form_ttl {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .recruit_info {
+    width: 90%;
+  }
+  .recruit_info_ttl {
+    font-size: 1.2em;
+  }
+  .recruit_info table {
+    width: 100%;
+  }
+  .recruit_info table .item {
+    font-size: 0.9em;
+  }
+  .recruit_info table td {
+    font-size: 0.9em;
+  }
+  .recruit_form {
+    width: 90%;
+  }
+  .recruit_form_ttl {
+    font-size: 1.2em;
+  }
+}

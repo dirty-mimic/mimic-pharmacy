@@ -1,0 +1,99 @@
+@use "global" as *;
+
+.recruit {
+  &_info {
+    width: 80%;
+    margin: 10% auto;
+
+    &_ttl {
+      font-size: 1.5em;
+      border-left: 3px solid #45DFC3;
+      padding-left: 2%;
+    }
+
+    table {
+      margin: 10% auto;
+      width: 70%;
+
+      tr {
+        border: 1px solid #000000;
+
+        .item {
+          background-color: #f3f3f3;
+          border-right: 1px solid #000000;
+          vertical-align: middle;
+          padding: 1.5% 0;
+        }
+
+        td {
+          vertical-align: middle;
+          padding-left: 2%;
+        }
+      }
+    }
+  }
+
+  &_form {
+    width: 80%;
+    margin: 10% auto;
+
+    &_ttl {
+      font-size: 1.5em;
+      border-left: 3px solid #45DFC3;
+      padding-left: 2%;
+    }
+  }
+}
+
+@include mq(tab) {
+  .recruit {
+    &_info {
+      width: 90%;
+
+      &_ttl {
+        font-size: 1.4em;
+      }
+
+      table {
+        width: 90%;
+      }
+    }
+    &_form {
+      width: 90%;
+
+      &_ttl {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+@include mq(sp) {
+  .recruit {
+    &_info {
+      width: 90%;
+
+      &_ttl {
+        font-size: 1.2em;
+      }
+      table {
+        width: 100%;
+
+        .item {
+          font-size: 0.9em;
+        }
+
+        td {
+          font-size: 0.9em;
+        }
+      }
+    }
+    &_form {
+      width: 90%;
+
+      &_ttl {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
