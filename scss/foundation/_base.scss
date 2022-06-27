@@ -271,8 +271,26 @@ main {
 
         td {
           text-align: center;
-          margin: 0 3%;
+          margin: 3% 0 ;
           width: 20em;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            background: #a0c4d3;
+            height: 3px;
+            width: 100%;
+            z-index: 1;
+            top: 200%;
+            right: 0;
+            border-radius: 10px;
+
+
+
+
+          }
+
         }
     }
   }
@@ -305,7 +323,7 @@ main {
         background-color: #F3F3F3;
         margin: 5% 0;
         padding: 5% 0;
-        border-radius:  100px 100px 100px 100px / 100px 100px 100px 100px;
+        border-radius: 30vh;
 
         &_text {
           &_ttl {
@@ -329,6 +347,7 @@ main {
           &_exp {
             font-size: 1.2em;
             margin-bottom: 10%;
+            padding: 0 7.5%;
           }
 
           &_btn {
@@ -379,8 +398,9 @@ main {
       }
 
       &_exp {
-        text-align: center;
         font-size:1.2em;
+        padding: 5% 10%;
+        float: left;
       }
 
       &_btn {
@@ -407,7 +427,7 @@ main {
   }
 
   &_button {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -479,6 +499,7 @@ main {
       &_exp {
         position: relative;
         margin-bottom: 20%;
+        line-height: 2;
       }
 
       &_img {
@@ -513,7 +534,7 @@ main {
 
   }
   &_button {
-    margin-top: 5%;
+    margin-top: 15%;
   }
 }
 
@@ -943,6 +964,10 @@ main {
         line-height: 2;
         padding-left: 5%;
         width: 60%;
+
+        &::after {
+          top: 100%;
+        }
       }
     }
   }
@@ -1063,6 +1088,10 @@ main {
       }
     }
   }
+
+  .slick_next {
+    right: -5%;
+  }
 }
 
 
@@ -1172,6 +1201,10 @@ main {
       &_item {
         td {
           width: 12em;
+
+          &::after {
+            right: -15%;
+          }
         }
       }
     }
@@ -1179,7 +1212,7 @@ main {
 
   .about {
     &_inner {
-      width: 100%;
+      width: 95%;
 
       &_contents {
         &_item {
@@ -1211,6 +1244,7 @@ main {
 
               &_3 {
                 color: #F16110;
+                font-size: 0.8em;
               }
             }
 
@@ -1283,6 +1317,7 @@ main {
     &_item {
       width: 5%;
       height: 10%;
+      border: 1px solid #000000;
     }
 
     &_txt {
@@ -1315,6 +1350,7 @@ main {
 
         p {
           font-size: 0.6em;
+          padding: 0 5%;
         }
 
       }
@@ -1324,6 +1360,7 @@ main {
   .footer {
     &_inner {
       display: block;
+      padding-top: 5%;
 
 
       &_menu {
@@ -1361,5 +1398,13 @@ main {
   .button a {
     width: 80px;
     font-size: 0.5em;
+  }
+
+  .slick_prev {
+    left: -4%;
+  }
+
+  .slick_next {
+    right: -4%;
   }
 }

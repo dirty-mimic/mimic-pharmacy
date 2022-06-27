@@ -231,8 +231,20 @@ main {
 }
 .news_container_item td {
   text-align: center;
-  margin: 0 3%;
+  margin: 3% 0;
   width: 20em;
+  position: relative;
+}
+.news_container_item td::after {
+  content: "";
+  position: absolute;
+  background: #a0c4d3;
+  height: 3px;
+  width: 100%;
+  z-index: 1;
+  top: 200%;
+  right: 0;
+  border-radius: 10px;
 }
 .news_btn {
   border: 1px solid #000000;
@@ -259,7 +271,7 @@ main {
   background-color: #F3F3F3;
   margin: 5% 0;
   padding: 5% 0;
-  border-radius: 100px 100px 100px 100px/100px 100px 100px 100px;
+  border-radius: 30vh;
 }
 .about_inner_contents_item_text_ttl {
   font-size: 2em;
@@ -278,6 +290,7 @@ main {
 .about_inner_contents_item_text_exp {
   font-size: 1.2em;
   margin-bottom: 10%;
+  padding: 0 7.5%;
 }
 .about_inner_contents_item_text_btn {
   background-color: #45DFC3;
@@ -319,8 +332,9 @@ main {
   margin-top: 10%;
 }
 .company_inner_box_exp {
-  text-align: center;
   font-size: 1.2em;
+  padding: 5% 10%;
+  float: left;
 }
 .company_inner_box_btn {
   background-color: #45DFC3;
@@ -341,7 +355,7 @@ main {
   left: 40%;
 }
 .company_button {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .shoplist_info {
@@ -401,6 +415,7 @@ main {
 .column_list_item_exp {
   position: relative;
   margin-bottom: 20%;
+  line-height: 2;
 }
 .column_list_item_img img {
   width: 100%;
@@ -426,7 +441,7 @@ main {
   font-size: 1em;
 }
 .column_button {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .recruit_inner {
@@ -811,6 +826,9 @@ main {
     padding-left: 5%;
     width: 60%;
   }
+  .news_container td::after {
+    top: 100%;
+  }
 
   .about_inner {
     width: 90%;
@@ -892,6 +910,10 @@ main {
   }
   .footer_inner_menu_images_img {
     text-align: center;
+  }
+
+  .slick_next {
+    right: -5%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -977,9 +999,12 @@ main {
   .news_container_item td {
     width: 12em;
   }
+  .news_container_item td::after {
+    right: -15%;
+  }
 
   .about_inner {
-    width: 100%;
+    width: 95%;
   }
   .about_inner_contents_item {
     width: 100%;
@@ -1006,6 +1031,7 @@ main {
   }
   .about_inner_contents_item_text_ttl_3 {
     color: #F16110;
+    font-size: 0.8em;
   }
   .about_inner_contents_item_text_exp {
     font-size: 0.6em;
@@ -1059,6 +1085,7 @@ main {
   .shoplist_item {
     width: 5%;
     height: 10%;
+    border: 1px solid #000000;
   }
   .shoplist_txt {
     font-size: 0.75em;
@@ -1084,10 +1111,12 @@ main {
   }
   .column_list_item p {
     font-size: 0.6em;
+    padding: 0 5%;
   }
 
   .footer_inner {
     display: block;
+    padding-top: 5%;
   }
   .footer_inner_menu {
     display: block;
@@ -1116,5 +1145,13 @@ main {
   .button a {
     width: 80px;
     font-size: 0.5em;
+  }
+
+  .slick_prev {
+    left: -4%;
+  }
+
+  .slick_next {
+    right: -4%;
   }
 }

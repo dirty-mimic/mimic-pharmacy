@@ -13,6 +13,7 @@
   padding-left: 2%;
 }
 .greeting_txt_exp {
+  margin-top: 5%;
   line-height: 2;
 }
 
@@ -36,27 +37,28 @@
   font-size: 1.5em;
   margin: 3%;
   list-style: none;
+  padding: 0 5%;
 }
 
 .corporate_info {
-  width: 60%;
+  width: 5%;
   margin: 5% auto;
 }
-.corporate_info table {
+.corporate_info_chart {
   margin: 0 auto;
-  width: 50%;
 }
-.corporate_info table tr {
+.corporate_info_chart tr {
   border: 1px solid #000000;
 }
-.corporate_info table tr .item {
+.corporate_info_chart tr .item {
   background-color: #f3f3f3;
   border-right: 1px solid #000000;
   vertical-align: middle;
-  padding: 1.5% 0;
+  padding: 1.5% 3%;
 }
-.corporate_info table tr td {
+.corporate_info_chart tr td {
   vertical-align: middle;
+  padding: 0 3%;
 }
 
 @media screen and (max-width: 768px) {
