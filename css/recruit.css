@@ -24,6 +24,7 @@
 .recruit_info table tr td {
   vertical-align: middle;
   padding-left: 2%;
+  line-height: 1.8;
 }
 .recruit_form {
   width: 80%;
@@ -97,10 +98,13 @@
     width: 100%;
   }
   .recruit_info table .item {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    width: 45%;
   }
   .recruit_info table td {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    width: 55%;
+    margin-right: 2%;
   }
   .recruit_form {
     width: 90%;

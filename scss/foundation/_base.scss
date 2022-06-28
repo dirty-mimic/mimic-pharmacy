@@ -60,16 +60,21 @@ main {
 }
 
 /* 背景画像のスタイルの設定 */
-.bg-slide-image {
+.swiper-slide-active .bg-slide-image,
+.swiper-slide-duplicate-active .bg-slide-image,
+.swiper-slide-prev .bg-slide-image {
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position:  center center;
   background-repeat: no-repeat;
   animation-name: zoom;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay:1s;
+  animation-direction: normal;
 }
 
 /* スライドさせるコンテンツのスタイル（絶対配置）*/

@@ -48,10 +48,20 @@
         line-height: 2;
       }
     }
+
+  }
+}
+
+@include mq(tab) {
+  .about {
+    &_button {
+      margin-bottom: 10%;
+    }
   }
 }
 
 @include mq(sp) {
+
   .about {
     &_list {
       display: block;
@@ -70,6 +80,10 @@
           font-size: 0.9em;
         }
       }
+    }
+
+    &_button {
+      margin-top: 7.5%;
     }
   }
 }

@@ -59,6 +59,7 @@
 .corporate_info_chart tr td {
   vertical-align: middle;
   padding: 0 3%;
+  line-height: 2.5;
 }
 
 @media screen and (max-width: 768px) {

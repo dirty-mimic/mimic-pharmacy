@@ -1,3 +1,5 @@
+'use strict';
+
 let mySwiper = new Swiper ('.swiper', {
   // 以下にオプションを設定
   loop: true, //最後に達したら先頭に戻る
@@ -16,7 +18,7 @@ let mySwiper = new Swiper ('.swiper', {
   },
 
   autoplay: {
-    delay: 4500,
+    delay: 4000,
   },
   speed: 2000,
   fadeEffect: {

@@ -37,6 +37,11 @@
   line-height: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .about_button {
+    margin-bottom: 10%;
+  }
+}
 @media screen and (max-width: 480px) {
   .about_list {
     display: block;
@@ -52,5 +57,8 @@
   }
   .about_list_item_exp {
     font-size: 0.9em;
+  }
+  .about_button {
+    margin-top: 7.5%;
   }
 }

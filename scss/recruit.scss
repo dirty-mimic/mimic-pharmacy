@@ -29,6 +29,7 @@
         td {
           vertical-align: middle;
           padding-left: 2%;
+          line-height: 1.8;
         }
       }
     }
@@ -107,7 +108,7 @@
       }
     }
   }
-  
+
 }
 
 @include mq(sp) {
@@ -122,11 +123,14 @@
         width: 100%;
 
         .item {
-          font-size: 0.9em;
+          font-size: 0.8em;
+          width: 45%;
         }
 
         td {
-          font-size: 0.9em;
+          font-size: 0.8em;
+          width: 55%;
+          margin-right: 2%;
         }
       }
     }
