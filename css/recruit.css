@@ -35,6 +35,40 @@
   padding-left: 2%;
 }
 
+.form {
+  width: 60%;
+  margin: 0 auto;
+}
+.form label {
+  display: inline-block;
+  width: 30%;
+  line-height: 2;
+}
+.form input, .form textarea {
+  box-sizing: border-box;
+  border: solid #ddd 1px;
+  width: 60%;
+  margin-bottom: 2.5%;
+}
+.form input {
+  padding: 1%;
+}
+.form textarea {
+  vertical-align: top;
+  height: 200px;
+}
+.form .button3 {
+  text-align: center;
+}
+.form .button3_submit {
+  padding: 1.5% 5%;
+  background-color: #555;
+  margin: 5% 0;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .recruit_info {
     width: 90%;
@@ -73,5 +107,16 @@
   }
   .recruit_form_ttl {
     font-size: 1.2em;
+  }
+
+  .form {
+    width: 80%;
+  }
+  .form label {
+    display: block;
+    width: 60%;
+  }
+  .form input, .form textarea {
+    width: 100%;
   }
 }
